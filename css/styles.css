@@ -24,7 +24,6 @@ ul {
 
 h1,
 h3,
-h4,
 p {
     margin: 0;
 }
@@ -44,13 +43,12 @@ button {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 26px;
-    line-height: 100%;
+    line-height: 1.19;
     letter-spacing: 0.03em;
 }
 
 .logo {
     color: #000000;
-    padding-left: 100px;
 }
 
 .logo-brand {
@@ -74,9 +72,8 @@ button {
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 100%;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    padding: 30px;
 }
 
 .nav-link:hover,
@@ -86,12 +83,11 @@ button {
 
 .nav-contacts a {
     color: var(--text-color-secondary);
+    text-decoration: none;
     font-weight: 500;
-    padding: 20px;
-}
-
-.contacts-container {
-    padding: 5px 0px 0px 250px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
 .nav-contacts a:hover,
@@ -114,10 +110,9 @@ button {
     font-weight: 900;
     text-transform: uppercase;
     font-size: 44px;
-    line-height: 116%;
+    line-height: 1.36;
     text-align: center;
     margin: 25px;
-    /* ╨╝╨╛╨╕ ╨╕╨╖╨╝╨╡╨╜╨╡╨╜╨╕╤П +7*/
     padding-top: 200px;
 }
 
@@ -126,11 +121,13 @@ button {
     color: var(--main-color);
     font-weight: 700;
     font-size: 16px;
-    line-height: 160%;
-    /* 2 ╤Б╤В╤А╨╛╨║╨╕ ╨б╤В╨╕╨╗╨╕╨╖╤Г╤О╤В ╨║╨╜╨╛╨┐╨║╨║╤Г*/
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    padding: 10px 32px 10px 32px;
 }
 
 .btn:hover,
@@ -157,7 +154,7 @@ button {
     color: var(--text-color-primary);
     font-weight: 700;
     font-size: 14px;
-    line-height: 100%;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -167,7 +164,8 @@ button {
     color: var(--text-color-secondary);
     font-weight: 400;
     font-size: 14px;
-    line-height: 146%;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
     /*whatwedo section */
@@ -176,7 +174,8 @@ button {
     color: var(--text-color-primary);
     font-weight: 700;
     font-size: 36px;
-    line-height: 100%;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     text-align: center;
 }
 
@@ -204,25 +203,21 @@ button {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team h4,
-.team p {
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-
-.team h4 {
+.team h3 {
     color: var(--text-color-primary);
-    font-weight: 500;
-    margin-bottom: 10px;
-    padding-top: 30px;
+    font-weight: 700;   
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .team p {
     color: var(--text-color-secondary);
     font-weight: 400;
-}
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;}
 
 #footer {
     background-color: #2F303A;
@@ -234,19 +229,19 @@ button {
 
 .logo-footer {
     color: var(--main-color);
-    margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 26px;
-    line-height: 100%;
+    line-height: 1.19;
     letter-spacing: 0.03em;
-}
+    margin-bottom: 20px;}
 
 #footer .nav-contacts a {
-    font-weight: 400;
     color: var(--text-color-adrress-op60);
-    line-height: 24px;
-}
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;}
 
 #footer .nav-contacts a:hover,
 :focus {
@@ -254,12 +249,12 @@ button {
 }
 
 .address {
+    color: var(--main-color);
     font-style: normal;
     font-weight: 400;
-    line-height: 171%;
     font-size: 14px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--main-color);
 }
 
 .hidden {
@@ -278,6 +273,13 @@ button {
     padding: 6px 22px;
     margin: 8px;
     border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em
 }
 
 .button:hover,
@@ -299,16 +301,19 @@ button {
 }
 
 .product-title {
+    color: var(--text-color-primary);
     font-weight: 700;
     font-size: 18px;
-    line-height: 171%;
-    color: var(--text-color-primary);
+    line-height: 2.0;
+    letter-spacing: 0.06em;
     margin: 4px;
 }
 
 .product-description {
+    color: var(--text-color-secondary);
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 160%;
-    color: var(--text-color-secondary);
-}
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}               
